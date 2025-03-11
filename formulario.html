@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+</head>
+<body>
+    <h2>Cadastro</h2>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label>Data: <input type="date" name="data" required></label><br><br>
+        
+        <label>Usuário: <input type="text" name="usuario" required></label><br><br>
+        <label>Senha: <input type="password" name="senha" required></label><br><br>
+        
+        <label>Nome: <input type="text" name="nome" required></label><br><br>
+        <label>Endereço: <input type="text" name="endereco" required></label><br><br>
+        <label>Número: <input type="number" name="numero" required></label><br><br>
+        <label>Complemento: <input type="text" name="complemento"></label><br><br>
+        
+        <label>Cidade: <input list="cidades" name="cidade"></label>
+        <datalist id="cidades">
+            <option value="São Paulo">
+            <option value="Rio de Janeiro">
+            <option value="Belo Horizonte">
+            <option value="Curitiba">
+        </datalist><br><br>
+        
+        <label>Estado:
+            <select name="estado">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="MG">MG</option>
+                <option value="PR">PR</option>
+            </select>
+        </label><br><br>
+        
+        <label>CEP: <input type="text" name="cep" required></label><br><br>
+        
+        <label>Gênero:</label>
+        <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+        <label><input type="radio" name="genero" value="Prefiro não falar"> Prefiro não falar</label><br><br>
+        
+        <label>Curso:</label>
+        <label><input type="checkbox" name="curso" value="ADS"> ADS</label>
+        <label><input type="checkbox" name="curso" value="Jogos"> Jogos</label>
+        <label><input type="checkbox" name="curso" value="Gestão de TI"> Gestão de TI</label>
+        <label><input type="checkbox" name="curso" value="Banco de Dados"> Banco de Dados</label><br><br>
+        
+        <label>Modelo:</label>
+        <label><input type="radio" name="modelo" value="Presencial"> Presencial</label>
+        <label><input type="radio" name="modelo" value="EAD"> EAD</label>
+        <label><input type="radio" name="modelo" value="Semi presencial"> Semi presencial</label><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
